@@ -1,0 +1,93 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #26324b;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #d8deeb;
+  border-radius: 9px;
+  padding: 10px 16px;
+  background: #fff;
+  color: #34415c;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #eef0ff;
+}
+
+h1 {
+  color: #5546d7;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #34415c;
+}
+
+input:not([type="checkbox"]) {
+  border: 1px solid #d8deeb;
+  border-radius: 9px;
+  outline: none;
+  background: white;
+}
+
+input:focus {
+  border-color: #7566ee;
+  box-shadow: 0 0 0 3px #7566ee20;
+}
+
+.task-search {
+  width: 100%;
+  margin: 12px 0;
+  padding: 11px 12px;
+}
+
+input[type="checkbox"] {
+  accent-color: #6657e8;
+  width: 18px;
+  height: 18px;
+}
+
+form button[type="submit"] {
+  background: #6657e8;
+  color: white;
+  border-color: #6657e8;
+  font-weight: 600;
+}
+
+form button[type="submit"]:hover {
+  background: #5142d1;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 12px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+
+  form input:not([type="checkbox"]) {
+    min-width: 0;
+  }
+}
